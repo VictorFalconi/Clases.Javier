@@ -58,3 +58,9 @@ resultado1 = uno(4, 3, numero); numero = 7, resultado1 = undefined
 propiedad length: Devuelve la longitud de una string o de un arreglo
 var str = "hola"
 str.length = 4
+
+git status ----> Muestra los archivos que han cambiado en color rojo
+git add . -----> Añade al commit todos los archivos cambiados dentro de la carpeta en la que estas
+git status ----> Lor archivos que queremos reemplazar en el repo debn estar en color verde
+git commit -m "Mensaje para el commit" ------> Confirma los cambios en los archivos correspondientes
+git push -----> Envia y reemplaza los archivos en el repo de github
