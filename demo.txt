@@ -1,0 +1,60 @@
+// Declarar variables: let, var, const
+// let: No se usa mucho, o casi nada
+// const: Sirve para declarar variables con valor fijo
+// var: La forma mas comun de declarar una variable
+
+var numero = 12;
+var numero1 = -23;
+var numero2 = 3.477599;
+var str = "hola";
+var str1 = "12";
+var str2 = "";
+var str3 = "@_*+";
+var bool = true;
+var bool1 = false;
+numero = "chau"; // Asignarle el valor "chau" a la variable numero
+numero == "chau"; // Doble igual compara valores y tipos
+numero === "chau"; // Solo compara el valor
+15 === "15"; // -----> "15" === "15" ----> true
+15 == "15"; // -----> false
+numero = numero1 + numero2; // Asignarle el valor de la suma a la variable numero
+13 / 2 // Division
+23 * 5 // Multiplicacion
+34 - 3 // Resta
+2 ** 3 // Potencia
+7 % 2 // Devuelve el residuo, modulo, resto
+23 > 32 // Mayor que
+34 < 21 // Menor que
+17 == 34 // Doble igual
+34 === 34 // Triple igual
+23 >= 34 // Mayor o igual
+45 <= 43 // Menor o igual
+!bool // ----> false. Negacion. Devuelve el valor de verdad contrario
+23 != 34 // Diferente de
+true || false // Si los dos son false, te da false y lo demas es true
+false || false // false
+true && false // Si los dos son true, te da true y lo demas es false
+true && true // true
+
+function demo() {}
+
+function uno(a, b, c) {
+    c = a + b;
+}
+
+uno(5, 7, numero);
+// numero = 5 + 7 ---> numero = 12; // En pantalla no aparece nada
+console.log(numero); // 12
+
+function suma(a, b) {
+    return a + b;
+}
+
+suma(4, 5); // 9
+
+resultado = suma(8, 10); // resultado = 18;
+resultado1 = uno(4, 3, numero); numero = 7, resultado1 = undefined
+
+propiedad length: Devuelve la longitud de una string o de un arreglo
+var str = "hola"
+str.length = 4
