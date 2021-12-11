@@ -64,3 +64,9 @@ git add . -----> Añade al commit todos los archivos cambiados dentro de la carp
 git status ----> Lor archivos que queremos reemplazar en el repo debn estar en color verde
 git commit -m "Mensaje para el commit" ------> Confirma los cambios en los archivos correspondientes
 git push -----> Envia y reemplaza los archivos en el repo de github
+
+Bucles: Son lineas de codigo que se repiten hasta que una condicion se cumpla o se deje de cumplir
+
+for (variable contadora(i, j, k...) con su valor inicial; condicion de continuidad; cambio de valor de la variable contadora) {
+    codigo que se va a repetir
+}
