@@ -180,7 +180,7 @@ function esPrimo(numero) {
   if (numero % 2 === 0) {
     return false;
   }
-  for (var i = 3; i <= Math.sqrt(numero); i + 2) {
+  for (var i = 3; i <= Math.sqrt(numero); i = i + 2) {
     if (numero % i === 0) {
       return false;
     }
@@ -204,19 +204,35 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-  
+  var arr = [];
+  for(var i = 0; i <= 10; i++) {
+    arr.push(6 * i);
+  }
+  return arr;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if(numero > 99 && numero < 1000) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var contador = 1;
+  do {
+    numero = numero + 5;
+    contador = contador + 1;
+  }
+  while(contador < 9);
+  return numero;
 }
 
 

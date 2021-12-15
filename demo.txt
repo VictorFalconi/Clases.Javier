@@ -70,3 +70,31 @@ Bucles: Son lineas de codigo que se repiten hasta que una condicion se cumpla o 
 for (variable contadora(i, j, k...) con su valor inicial; condicion de continuidad; cambio de valor de la variable contadora) {
     codigo que se va a repetir
 }
+
+var arreglo = [];
+var arreglo1 = [2,3,4,5,"hola",function(){},{},null,undefined,true];
+                0 1 2 3  ....
+arreglo[0] ---> 2
+arreglo[3] ---> 5
+arreglo.push(2) ----> [2];
+arreglo.push(5) ----> [2,5];
+var uno = arreglo.pop() ----> [2];
+uno ----> 5
+arreglo.unshift(10) ----> [10,2];
+arreglo.unshift(3) -----> [3,10,2];
+var dos = arreglo.shift() ----> [10,2];
+dos ----> 3
+arreglo.length ----> 2
+arreglo1.length ---> 10
+
+do {
+    codigo que se va a repetir
+}
+while(condicion de continuidad);
+
+arreglo = [perro, gato, pollo, pavo];
+arreglo.join(" ") ----> "perro gato pollo pavo";
+arreglo.join(".;_-!") ----> "perro.;_-!gato.;_-!pollo.;_-!pavo";
+
+arreglo.includes("perro") ----> true
+arreglo.includes("pajaro") ---> false
