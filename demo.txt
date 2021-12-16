@@ -98,3 +98,57 @@ arreglo.join(".;_-!") ----> "perro.;_-!gato.;_-!pollo.;_-!pavo";
 
 arreglo.includes("perro") ----> true
 arreglo.includes("pajaro") ---> false
+
+var arreglo = [Javier, 34, 1.75, 'rojo', 'cuadrado']
+arreglo[0] ---> Javier
+arreglo[2] ---> 1.75
+
+var objeto = {
+    nombre: Javier,
+    edad: 34,
+    altura: 1.75,
+    color: rojo,
+    forma: cuadrado,
+    metodo: function() {
+        return 0;
+    },
+    objeto1: {
+        tamaño: grande,
+        numero: 5
+    }
+    ...
+}
+
+objeto.nombre ----> Javier
+objeto.altura ----> 1.75
+objeto['edad'] ---> 34
+objeto['nombre'] -> Javier
+var nombre = objeto.nombre;
+nombre ----> Javier
+
+objeto.color = 'rojo';
+objeto['forma'] = cuadrado;
+
+objeto.direccion ----> null
+objeto['hora'] ------> null
+
+function darNombre() {
+    return objeto.nombre;
+}
+
+darNombre() ----> Javier
+
+objeto.metodo = function() {
+    return 0;
+}
+
+objeto.metodo() ----> 0
+
+objeto.objeto1 = {
+    tamaño: grande,
+    numero: 5
+}
+
+objeto.objeto1.tamaño ---> grande
+objeto.objeto1['numero'] ---> 5
+objeto['objeto1'].tamaño ----> grande
