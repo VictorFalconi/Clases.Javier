@@ -152,3 +152,36 @@ objeto.objeto1 = {
 objeto.objeto1.tamaño ---> grande
 objeto.objeto1['numero'] ---> 5
 objeto['objeto1'].tamaño ----> grande
+
+function Persona(nombre, apellido, edad) {
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+
+    // No es buena practica definir metodos aqui
+}
+
+var persona1 = new Persona("Juan", "Perez", 34);
+var parsona1 = {
+    nombre: Juan,
+    apeliido: Perez,
+    edad: 34
+}
+
+class Persona {
+    constructor(nombre, apellido, edad) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+    }
+
+    // Metodo dentro de la clase
+    saludar = function() {
+        return "Hola, " + this.nombre;
+    }
+}
+
+// Asi se crea un metodo fuera de la clase o funcion constructora:
+Persona.prototype.despedirse = function() {
+    return "Adios, " + this.nombre;
+}
